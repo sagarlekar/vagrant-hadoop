@@ -1,10 +1,10 @@
-vagrant-hadoop
-==============
+Setup and Installation
+======================
 
 To start Hadoop cluster with Vagrant :
-- clone this repository
+- clone this repository - git clone https://github.com/sagarlekar/vagrant-hadoop.git
 - [install vagrant](http://www.vagrantup.com/) 
-- Download hadoop-1.2.1.tar.gz and place in modules/hadoop/files
+- [download hadoop-1.2.1.tar.gz](http://www.apache.org/dyn/closer.cgi/hadoop/common/) and place in modules/hadoop/files
 - vagrant box add base-hadoop http://files.vagrantup.com/lucid64.box
 - vagrant up
 - vagrant ssh master
