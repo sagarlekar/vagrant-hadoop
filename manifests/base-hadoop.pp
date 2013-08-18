@@ -43,3 +43,10 @@ ssh_authorized_key { "ssh_key":
   user   => "root",
   require => File['/root/.ssh/id_rsa.pub']
 }
+
+file { "/tmp/hadoop.tar.gz":
+    source => "puppet:///modules/hadoop/hadoop-1.2.1.tar.gz",
+    mode => 644,
+    owner => root,
+    group => root
+}
